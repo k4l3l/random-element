@@ -1,1 +1,35 @@
-hello world!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Click Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Click the Button</h1>
+  <button id="myButton">Click Me</button>
+
+  <script>
+    // Get the button element
+    const button = document.getElementById('myButton');
+
+    // Add click event listener
+    button.addEventListener('click', function() {
+      alert('Button was clicked!');
+    });
+  </script>
+
+</body>
+</html>
